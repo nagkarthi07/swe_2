@@ -1,0 +1,32 @@
+apiVersion: v1
+kind: Config
+clusters:
+- name: "645ranch"
+  cluster:
+    server: "https://35.170.122.30/k8s/clusters/c-m-qjjhm4x7"
+    certificate-authority-data: "LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUJ2VENDQ\
+      VdPZ0F3SUJBZ0lCQURBS0JnZ3Foa2pPUFFRREFqQkdNUnd3R2dZRFZRUUtFeE5rZVc1aGJXbGoKY\
+      kdsemRHVnVaWEl0YjNKbk1TWXdKQVlEVlFRRERCMWtlVzVoYldsamJHbHpkR1Z1WlhJdFkyRkFNV\
+      Fk1T0RNMwpNalk0T1RBZUZ3MHlNekV3TWpjd01qRXhNamxhRncwek16RXdNalF3TWpFeE1qbGFNR\
+      Vl4SERBYUJnTlZCQW9UCkUyUjVibUZ0YVdOc2FYTjBaVzVsY2kxdmNtY3hKakFrQmdOVkJBTU1IV\
+      1I1Ym1GdGFXTnNhWE4wWlc1bGNpMWoKWVVBeE5qazRNemN5TmpnNU1Ga3dFd1lIS29aSXpqMENBU\
+      VlJS29aSXpqMERBUWNEUWdBRXVrNWFxbndESld4KwpMMlIzbi9VT1plTXN4RG1JY2hra2ludGhCT\
+      VIvWXdSejlrNGpnZS8xWFpvellvd3RFZmxpNmp3UFhWT2dnTXdiCmtldWNkY1o2MUtOQ01FQXdEZ\
+      1lEVlIwUEFRSC9CQVFEQWdLa01BOEdBMVVkRXdFQi93UUZNQU1CQWY4d0hRWUQKVlIwT0JCWUVGU\
+      EI2ZnN6RS9ZRllSZ3pNaDhFUnRNZ3J5Q3BRTUFvR0NDcUdTTTQ5QkFNQ0EwZ0FNRVVDSUMrVQpXO\
+      GFoaU4zaFJYMXR3SHRPRVNNcWdxcWQ1cWloZWE1MEtDNVFiYlZzQWlFQXIwb2lmZFdhdW54TnF3W\
+      Gl3ZGduCmh0YThUQTRpcGV0K1hCVitPaDJzOWU0PQotLS0tLUVORCBDRVJUSUZJQ0FURS0tLS0t"
+
+users:
+- name: "645ranch"
+  user:
+    token: "kubeconfig-user-brct2rtrc8:k6vh5svjcqg54ffl8q8k44cbp44d4cqkj97sl8rv52fc8rvg2t6sxd"
+
+
+contexts:
+- name: "645ranch"
+  context:
+    user: "645ranch"
+    cluster: "645ranch"
+
+current-context: "645ranch"

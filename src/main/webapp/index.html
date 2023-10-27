@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Survey Page 645</title>
+    
+</head>
+<body>
+    <div class="solid">
+    <h1 class="gmu"> CS Department Survey Page</h1>
+    <p class="feedback"> Please provide feedback about campus visit</p>
+    <form id="form" action="/action_page.php" method="get" autocomplete="on">
+        <fieldset class="data" required>
+            <label for="Firstname" class="required">First Name <input id="Firstname" type="text" name="fname" required/></label>
+            <label for="Lastname" class="required">Last Name <input id="Lastname" type="text" name="lname" required/></label>
+            <label for="Address" class="required">Street Address <input id="Address" type="text" name="Address" required/></label>
+            <label for="City" class="required">City <input id="City" type="text" name="City" required/></label>
+            <label for="state">State <input id="state" type="text" name="state"/></label>
+            <label for="zip">Zip <input id="zip" type="number" name="zip"/></label>
+            <label for="phone" class="required">Telephone Number <input id="phone" type="number" name="phone" required/></label>
+            <label for="email" class="required">E-mail <input id="email" type="email" name="email" placeholder="@example.com" required/></label>
+            <label for="url">URL<input id="url" type="url" name="url" placeholder="example.com"/></label>
+            <label for="date">Date of Survey <input id="date" type="date" name="date"/></label>
+        </fieldset>
+        <fieldset class="like">
+            <p class="feedback">What do you liked most of the campus</p>
+            <label for="students"><input id="students" type="checkbox" name="students"/> Student </label>
+            <label for="location"><input id="location" type="checkbox" name="location" /> Location</label>
+            <label for="campus"><input id="campus" type="checkbox" name="campus"/> Campus</label>
+            <label for="atmosphere"><input id="atmosphere" type="checkbox" name="atmosphere"/> Atmosphere</label>
+            <label for="rooms"><input id="rooms" type="checkbox" name="rooms"/> Dorm Rooms</label>
+            <label for="sports"><input id="sports" type="checkbox" name="sports"/> Sports</label>
+        </fieldset>
+        <fieldset class="intrest">
+            <p class="feedback">How you become intrested in the University</p>
+            <label for="friends"><input id="friends" type="radio" name="intrest"/>Friends</label>
+            <label for="tv"><input id="tv" type="radio" name="intrest"/>Televison</label>
+            <label for="internet"><input id="internet" type="radio" name="intrest"/>Internet</label>
+            <label for="others"><input id="others" type="radio" name="intrest" />Others</label>
+        </fieldset>
+        <fieldset class="grad">
+            <label for="month" class="required">Graduation Month<input list="months" id="month" name="months" required/></label>
+            <label for="year" class="required">Graduation Year<input id="year" name="year" type="number" min="2023" max="2099" required placeholder="yyyy" pattern="[0-9]{4}"/></label>
+            <datalist id="months">
+                <option value="January">
+                <option value="February">
+                <option value="March">
+                <option value="April">
+                <option value="May">
+                <option value="June">
+                <option value="July">
+                <option value="August">
+                <option value="September">
+                <option value="October">
+                <option value="November">
+                <option value="December">
+                </datalist>
+                <label for="recommend"> <p style="font-weight: bold;">Recommending the School </p></label>
+                <select id="recommend" name="recommend">
+                    <option value="Very Likely">Very Likely</option>
+                    <option value="Likely">Likely</option>
+                    <option value="Unlikely">Unlikely</option>
+                </select>
+        </fieldset>
+        <div class="comments">
+        Comments<input type="text" placeholder="enter your comments"/>
+        </div>
+        <div class="submit"> <input type="submit" value="Submit" />
+            </div>
+        <button type="reset" value="Reset">Cancel</button>
+        <label for="raffle">Raffle (Enter at least ten comma-separated numbers between 1 and 100):</label>
+        <input type="text" id="raffle" name="raffle" required>
+        <p id="raffleErrorMessage" style="color: red; display: none;">Please enter at least ten valid numbers between 1 and 100.</p>
+        <br>
+        <br>
+        
+        
+    </form>
+</div>
+</body>
+</html>

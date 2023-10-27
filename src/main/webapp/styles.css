@@ -1,0 +1,46 @@
+label{
+    display: block;
+    margin: 0.5rem 0;
+}
+body{
+    width: 50%;
+    height: 50vh;
+    display: block;
+    margin:auto;
+    padding-left: 20px;
+    text-align: 40px;
+
+}
+.required::before{
+    content: "*";
+    color: red;
+}
+.comments{
+    border: 10px;
+    text-align: left;
+    padding: 20px;
+}
+.submit{
+    color: rgb(235, 230, 224);
+    }
+.solid{
+    border: solid;
+    margin-left: 20px;
+    text-align:left;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.gmu{
+    text-align: center;
+    background-color: #006633; /* GMU green */
+    border: 5px solid #006633; /* 5px solid border in GMU green */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Box shadow styling */
+    padding: 30px; /* Adjust padding to your preference */
+    text-align: center;
+    color:#FFCC33
+}
+.feedback{
+    padding-left: 40px;
+    color:#006633;
+}
+
