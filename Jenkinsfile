@@ -30,8 +30,8 @@ pipeline {
         stage('Deploy to Kubernetes Cluster') {
             steps {
                 script {
-                    sh "kubectl set image deployment/deploy-1 container-0=${registry}:${dateTag}"
-                    sh "kubectl set image deployment/deploy-1b container-0=${registry}:${dateTag}"
+                    sh "kubectl set image deployment/dp container-0=${registry}:${dateTag}"
+                    sh "kubectl set image deployment/dplb container-0=${registry}:${dateTag}"
                 }
             }
         }
