@@ -3,7 +3,7 @@ pipeline{
 
     environment {
 registry = "akhpng31/phani645"
-registryCredential = 'docker’
+registryCredential = "docker"
 def dateTag = new Date().format("yyyyMMdd-HHmmss")
 
 // def dateTag = "latest"
