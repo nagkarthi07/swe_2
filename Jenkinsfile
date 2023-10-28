@@ -27,10 +27,18 @@ pipeline {
                 }
             }
         }
-        stage('Deploy to Kubernetes Cluster') {
+        stage('Deploy to Kubernetes Cluster on single pod') {
             steps {
                 script {
                     sh "kubectl set image deployment/dp container-0=${registry}:${dateTag}"
+                    //sh "kubectl set image deployment/dplb container-0=${registry}:${dateTag}"
+                }
+            }
+        }
+        stage('Deploy to Kubernetes Cluster for load balancer') {
+            steps {
+                script {
+                    //sh "kubectl set image deployment/dp container-0=${registry}:${dateTag}"
                     sh "kubectl set image deployment/dplb container-0=${registry}:${dateTag}"
                 }
             }
